@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="./home page/Image/photo_2024-10-17_15-40-08.jpg">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SH_A Shop</title>
-  <link rel="stylesheet" href="./home page/style.css">
-  <script defer src="./home page/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH_A Shop - Premium Quality Products</title>
+    <link rel="stylesheet" href="./home page/style.css">
+    <link rel="shortcut icon" href="./home page/Image/photo_2024-10-17_15-40-08.jpg" as="image">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <span class="icon"><img src="./Image/photo_2024-10-17_15-40-08.jpg" alt=""></span>
-        <h1>SH_A Shop</h1>
-      </div>
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="menu-toggle" id="menuToggle">☰</button>
-      </nav>
-    </div>
-  </header>
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="logo" aria-label="SH_A Shop Logo">
+                <img src="./home page/Image/photo_2024-10-17_15-40-08.jpg" alt="SH_A Shop Logo" width="40" height="40">
+                <h1>SH_A Shop</h1>
+            </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h2>Go-To Shop for Premium Quality</h2>
-        <p>Discover a curated selection of exceptional products for everyday use. Quality and style, all in one place.</p>
-        <div class="hero-buttons">
-          <a href="#products" class="btn btn-primary">Shop Now</a>
+            <nav class="nav" aria-label="Main Navigation">
+                <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Menu">
+                    ☰
+                </button>
+                <ul id="main-menu" class="menu">
+                    <li><a href="./home page/learn more/index.html">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://via.placeholder.com/600x400" alt="Shop Interior">
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="container">
-      <div class="feature">
-        <div class="icon">🛍️</div>
-        <h3>Premium Products</h3>
-        <p>Handpicked items of the finest quality.</p>
-      </div>
-      <div class="feature">
-        <div class="icon">🏆</div>
-        <h3>Trusted Quality</h3>
-        <p>Exceeding expectations with every purchase.</p>
-      </div>
-      <div class="feature">
-        <div class="icon">🤝</div>
-        <h3>Community Focused</h3>
-        <p>Supporting local creators and customers.</p>
-      </div>
-    </div>
-  </section>
+    <main>
+      <br>
+      <br>
+      <br>
+      <br>
+        <section class="section hero" id="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2 id="hero-title">Go-To Shop for Premium Quality</h2>
+                    <p>Discover a curated selection of exceptional products for everyday use. Quality and style, all in one place.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary" aria-label="Shop Now">Shop Now</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 SH_A Shop. All Rights Reserved.</p>
-      <p>Designed with ❤️ by SH_A Team</p>
-    </div>
-  </footer>
+        <section class="section features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="sr-only">Our Key Features</h2>
+                <div class="feature">
+                    <div class="icon" aria-hidden="true">🛍️</div>
+                    <h3>Premium Products</h3>
+                    <p>Handpicked items of the finest quality.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon" aria-hidden="true">🏆</div>
+                    <h3>Trusted Quality</h3>
+                    <p>Exceeding expectations with every purchase.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon" aria-hidden="true">🤝</div>
+                    <h3>Community Focused</h3>
+                    <p>Supporting local creators and customers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>© 2024 SH_A Shop. All Rights Reserved.</p>
+            <p>Designed with ❤️ by SH_A Team</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
