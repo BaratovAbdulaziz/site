@@ -1,0 +1,80 @@
+/* About Section Styles */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-gray);
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.about-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+
+.about-card h3 {
+    color: var(--primary-orange);
+    margin-bottom: 1rem;
+}
+
+.about-story {
+    background: white;
+    border-radius: 8px;
+    padding: 3rem;
+    margin-top: 4rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease-out;
+}
+
+.about-story.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-story h3 {
+    color: var(--primary-orange);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.about-story p {
+    line-height: 1.8;
+    color: var(--gray);
+}
